@@ -11,6 +11,9 @@ import javaBasics.x23_OOP.itarator.Iterator;
 import javaBasics.x23_OOP.repository.AnimalPool;
 import javaBasics.x23_OOP.repository.Zoo;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Main {
 
     public static void main(String[] args) throws CloneNotSupportedException {
