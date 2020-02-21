@@ -11,11 +11,11 @@ public class XmlSpring {
 
     public static void main(String[] args) {
         simpleHello();
-        oneClassTwoBeans();
-        beanWithConstructor();
-        beanWithMultipleConstructor();
-        singletonANDprotoype();
-        checkEquality();
+//        oneClassTwoBeans();
+//        beanWithConstructor();
+//        beanWithMultipleConstructor();
+//        singletonANDprotoype();
+//        checkEquality();
     }
 
     static void simpleHello(){
