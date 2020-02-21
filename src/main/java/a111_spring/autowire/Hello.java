@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Qualifier("someRandomName")
 //@Primary
-//@CustomQualifier("Foo")
+//@CustomQualifier("hello")
 public class Hello implements Greetings {
 
     @Override

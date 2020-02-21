@@ -1,9 +1,12 @@
 package a111_spring.inject;
 
+import org.springframework.stereotype.Service;
+
 import javax.inject.Inject;
 import javax.inject.Named;
 
-@Named
+//@Named
+@Service
 public class ZooPark {
 
     @Inject

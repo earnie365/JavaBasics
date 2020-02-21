@@ -1,8 +1,11 @@
 package a111_spring.inject;
 
+import org.springframework.stereotype.Component;
+
 import javax.inject.Named;
 
-@Named
+//@Named
+@Component
 public class Cat {
 
     public void mheow() {

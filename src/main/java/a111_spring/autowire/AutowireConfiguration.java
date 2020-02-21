@@ -3,7 +3,7 @@ package a111_spring.autowire;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 @ComponentScan("a111_spring.autowire")
 public class AutowireConfiguration {
 
@@ -14,4 +14,5 @@ public class AutowireConfiguration {
         │ @Repository│ stereotype for persistence layer
         │ @Service   │ stereotype for service layer
         │ @Controller│ stereotype for presentation layer (spring-mvc)
+        | @Named |  some old sh*t ????
 */

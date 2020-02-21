@@ -3,7 +3,7 @@ package a111_spring.autowire;
 import org.springframework.stereotype.Component;
 
 @Component
-//@CustomQualifier("Bar")
+//@CustomQualifier("bye")
 public class GoodBye implements Greetings {
 
     public void pleaseTellMeSomething() {
