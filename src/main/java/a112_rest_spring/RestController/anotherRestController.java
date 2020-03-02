@@ -18,7 +18,8 @@ public class anotherRestController {
 
 //    http://localhost:8080/home2/params?name=John&surname=Wick&age=45
     @GetMapping("/params")
-    String printStringv4(@RequestParam (value = "name", required =  false) String name, @RequestParam(value = "surname") String surname, @RequestParam(value = "age") int age) {
+    String printStringv4(@RequestParam (value = "name", required =  false) String name,
+                         @RequestParam(value = "surname") String surname, @RequestParam(value = "age") int age) {
         System.out.println("Request worked with inputs: " + name  + " " + surname + " " + age);
         return "Hello "  + name  + " " + surname + " " + age;
     }
@@ -29,7 +30,7 @@ public class anotherRestController {
         return "Hello " + input;
     }
 
-    @GetMapping("/{input}")
+    @GetMapping("/{input}/static")
     String printStringv3(@PathVariable String input) {
         System.out.println("Request PATH worked with input: " + input);
         return "Hello " + input;
