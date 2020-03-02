@@ -14,5 +14,5 @@ public class AutowireConfiguration {
         │ @Repository│ stereotype for persistence layer
         │ @Service   │ stereotype for service layer
         │ @Controller│ stereotype for presentation layer (spring-mvc)
-        | @Named |  some old sh*t ????
+
 */

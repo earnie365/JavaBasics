@@ -2,14 +2,21 @@ package a111_spring.inject;
 
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.inject.Named;
+import javax.inject.Singleton;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-//@Named
 //@Component
 public class Dog {
+
+    public void bark() {
+        System.out.println("Dog says whoof whoof");
+    }
+
 
     String name;
     Date date;
@@ -31,7 +38,4 @@ public class Dog {
         return name;
     }
 
-    public void bark() {
-        System.out.println("Dog says whoof whoof");
-    }
 }

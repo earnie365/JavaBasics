@@ -1,4 +1,4 @@
-package appLication.RestController;
+package a112_rest_spring.RestController;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

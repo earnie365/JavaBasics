@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-//@Named
 @Service
 public class ZooPark {
 

@@ -5,9 +5,9 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("someRandomName")
+//@Qualifier("hello")
 //@Primary
-//@CustomQualifier("hello")
+@CustomQualifier("somerandomname")
 public class Hello implements Greetings {
 
     @Override

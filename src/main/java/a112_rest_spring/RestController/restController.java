@@ -1,5 +1,7 @@
-package appLication.RestController;
+package a112_rest_spring.RestController;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,13 +15,32 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/home")
+@RequestMapping(value = {"/", "/home"})
 public class restController {
+
+    @Value("${some.value}")
+    String valueExample;
+    @Value("${some.value2}")
+    String valueExample2;
 
     @GetMapping("/string")
     String printString() {
         System.out.println("get mapping worked");
         return "Hello world !";
+    }
+
+    @GetMapping("/value")
+    String getmevalue(){
+        return valueExample;
+    }
+    @GetMapping("/value2")
+    String getmeanothervalue(){
+        return valueExample2;
+    }
+
+    @GetMapping(path = "/object", produces= MediaType.APPLICATION_JSON_VALUE)
+    SomeObject getmeobject(){
+        return new SomeObject();
     }
 
     @GetMapping("/list")

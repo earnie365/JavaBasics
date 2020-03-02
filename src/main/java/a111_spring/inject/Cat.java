@@ -4,7 +4,6 @@ import org.springframework.stereotype.Component;
 
 import javax.inject.Named;
 
-//@Named
 @Component
 public class Cat {
 

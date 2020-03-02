@@ -17,7 +17,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="JavaBasics" options="" />
+      <module name="JavaBasics" options="-parameters" />
       <module name="SpringBoot" options="-parameters" />
     </option>
   </component>

@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-//@Configuration
 @ComponentScan("a111_spring.inject")
 public class InjectConfiguration {
 
@@ -23,5 +22,8 @@ public class InjectConfiguration {
         this.nameForDog = "Cenna";
     }
 
+//    @PostConstruct
+//    @Bean
+//    @PreDestroy
 
 }

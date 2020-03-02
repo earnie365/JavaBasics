@@ -9,8 +9,8 @@ public class AnotationSpring {
     static  AbstractApplicationContext context = new AnnotationConfigApplicationContext(AnnotationConfig.class);
 
     public static void main(String args[]) {
-        simpleHelloWorld();
-        simpleConstructor();
+//        simpleHelloWorld();
+//        simpleConstructor();
         checkEquality();
 
 

@@ -7,13 +7,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class TalkService {
 
+//    @CustomQualifier("hello")
     @Autowired
-    @Qualifier("someRandomName")
-//    @CustomQualifier("Foo")
-    private Greetings formatter;
+    @Qualifier("bye")
+    private Greetings greetings;
 
     public void doStuff() {
-        formatter.pleaseTellMeSomething();
+        greetings.pleaseTellMeSomething();
     }
 
 }

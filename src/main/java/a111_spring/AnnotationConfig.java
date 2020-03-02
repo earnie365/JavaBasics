@@ -10,27 +10,25 @@ import javax.annotation.PostConstruct;
 @Configuration
 public class AnnotationConfig {
 
-    @Bean(name="helloWorldBean")
-    @PostConstruct
-    @Description("This is a sample HelloWorld Bean")
+    @Bean(name = "helloWorldBean")
     public AnnotationHelloWorld helloWorld() {
         return new AnnotationHelloWorld();
     }
 
-    @Bean(name="helloWorldConstructor")
+    @Bean(name = "helloWorldConstructor")
     public AnnotationHelloWorld helloWorld2() {
         return new AnnotationHelloWorld("Hell yeah !");
     }
 
-    @Bean(name="helloSingleton")
+    @Bean(name = "helloSingleton")
     @Scope("singleton")
-    public BeanUniqueness methodNameDoesntMatter(){
+    public BeanUniqueness methodNameDoesntMatter() {
         return new BeanUniqueness();
     }
 
-    @Bean(name="helloPrototype")
+    @Bean(name = "helloPrototype")
     @Scope("prototype")
-    public BeanUniqueness methodNameDoesntMatter2(){
+    public BeanUniqueness methodNameDoesntMatter2() {
         return new BeanUniqueness();
     }
 }
